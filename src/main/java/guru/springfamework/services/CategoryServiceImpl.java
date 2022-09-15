@@ -28,4 +28,6 @@ public class CategoryServiceImpl implements CategoryService {
 	public CategoryDTO getCategoryByName(String name) {
 		return categoryMapper.categoryToCategoryDTO(categoryRepository.findByName(name));
 	}
+
+
 }

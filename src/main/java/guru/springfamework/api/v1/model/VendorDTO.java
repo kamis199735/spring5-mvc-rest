@@ -6,16 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Created by jt on 9/27/17.
+ * Created by jt on 10/6/17.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerDTO {
+public class VendorDTO {
+    private String name;
 
-	private String firstname;
-	private String lastname;
+    @JsonProperty("vendor_url")
+    private String vendorUrl;
 
-	@JsonProperty("customer_url")
-	private String customerUrl;
 }
